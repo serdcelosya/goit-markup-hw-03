@@ -9,6 +9,8 @@
   --card-color: #eeeeee;
   --btn-active: #188ce8;
   --header-border: #ececec;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -165,7 +167,8 @@ p {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   border-radius: 4px;
-  min-width: 216px;
+  padding: 10px 32px;
+  border: none;
   text-align: center;
 }
 
@@ -216,6 +219,7 @@ p {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .text-peculiarities {
@@ -223,6 +227,7 @@ p {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  text-transform: none;
 }
 
 /* Чем занимаемся */
@@ -235,6 +240,11 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  padding-top: 0;
+}
+
+.section.act {
+  padding-top: 0;
 }
 
 .list-activity {
@@ -268,16 +278,14 @@ p {
   margin-bottom: 30px;
 }
 
-.team-list,
 .team-list:not(:last-child) {
-  background-color: var(--bg-color-primary);
   margin-right: 30px;
 }
 
 .team-list {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--bg-color-primary);
 }
 
 .team-name {
@@ -373,13 +381,17 @@ p {
   
 } */
 
-/* .photo-port {
-  margin-bottom: 20px;
-} */
+.photo-port {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .cards.list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  /* flex-basis: calc(100% / 3); */
 }
 
 .cards-border {
@@ -389,17 +401,8 @@ p {
   padding: 20px 24px;
 }
 
-.cards > .items:nth-child(3n) {
-  margin-right: 0;
-}
-
-.cards > .items:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
-
 .cards .items {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .cards-name {
@@ -424,6 +427,8 @@ p {
   display: block;
   text-decoration: none;
   line-height: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .choose-portfolio {
@@ -463,6 +468,8 @@ p {
 .portfolio .btn-portfolio:focus {
   background-color: var(--accent-color);
   color: var(--bg-color-primary);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list {

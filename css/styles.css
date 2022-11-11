@@ -37,6 +37,11 @@ p {
   padding-right: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Хедер */
 
 .logo-link {
@@ -122,12 +127,12 @@ p {
 
 .hero {
   background-color: var(--bg-color-secondary);
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   padding: 200px;
 }
 
 .header.marg {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .header {
@@ -204,7 +209,7 @@ p {
 }
 
 .feature {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .peculiarities {
@@ -238,7 +243,7 @@ p {
 }
 
 .list-activity {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   display: flex;
 }
 
@@ -250,8 +255,8 @@ p {
 
 .team {
   background-color: var(--bg-color-third);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .team-card {
@@ -381,7 +386,7 @@ p {
 } */
 
 .cards.list {
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
   display: flex;
   flex-wrap: wrap;
 }

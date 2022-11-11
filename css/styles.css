@@ -127,16 +127,13 @@ p {
 
 .hero {
   background-color: var(--bg-color-secondary);
-  /* margin-bottom: 94px; */
   padding: 200px;
 }
 
 .header.marg {
-  /* margin-bottom: 94px; */
 }
 
 .header {
-  /* margin-bottom: 94px; */
   border: 1px solid var(--header-border);
   /* background-color: tomato; */
 }
@@ -209,18 +206,16 @@ p {
 }
 
 .feature {
-  /* margin-bottom: 94px; */
 }
 
 .peculiarities {
   color: var(--primary-text-color);
-  margin-bottom: list;
+  /* margin-bottom: list; */
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .text-peculiarities {
@@ -243,7 +238,6 @@ p {
 }
 
 .list-activity {
-  /* margin-bottom: 94px; */
   display: flex;
 }
 
@@ -255,8 +249,6 @@ p {
 
 .team {
   background-color: var(--bg-color-third);
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
 }
 
 .team-card {
@@ -386,7 +378,6 @@ p {
 } */
 
 .cards.list {
-  /* margin-bottom: 94px; */
   display: flex;
   flex-wrap: wrap;
 }
